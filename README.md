@@ -31,7 +31,6 @@ projeto-devcard/
 
 ---
 
-## 📱 Telas do aplicativo
 
 ### 🏠 Home (`index.tsx`)
 
@@ -47,6 +46,10 @@ Tela inicial de apresentação do aplicativo.
 ```ts
 router.push('/cadastro')
 ```
+
+## 📱 Tela do index.tsx
+<img width="369" height="805" alt="image" src="https://github.com/user-attachments/assets/33efbe40-06bf-409e-b398-a58725acf463" />
+
 
 ---
 
@@ -93,6 +96,10 @@ router.push({
 });
 ```
 
+## 📱 Tela do cadastro.tsx
+<img width="364" height="791" alt="image" src="https://github.com/user-attachments/assets/6c9e9c92-50a1-42c4-bb5e-f4de0a8a5212" />
+
+
 ---
 
 ### 👀 Preview (`preview.tsx`)
@@ -123,6 +130,10 @@ Tela de visualização do cartão digital antes da finalização.
 - **Editar dados** → volta para cadastro  
 - **Finalizar** → vai para sucesso  
 
+## 📱 Tela do preview.tsx
+<img width="361" height="783" alt="image" src="https://github.com/user-attachments/assets/2fb950f4-443a-42bf-9a82-d086feaf08b4" />
+
+
 ---
 
 ### 🎉 Sucesso (`sucesso.tsx`)
@@ -144,6 +155,9 @@ Tela final de confirmação.
 ```ts
 router.replace('/')
 ```
+
+## 📱 Tela do Sucesso.tsx
+<img width="358" height="812" alt="image" src="https://github.com/user-attachments/assets/19557a44-d9d9-43d2-b48a-fa65a3b2127a" />
 
 ---
 
