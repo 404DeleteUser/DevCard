@@ -16,13 +16,10 @@ export default function Sucesso() {
   return (
     <View style={styles.container}>
 
-      {/* CONTEÚDO CENTRAL */}
       <View style={styles.content}>
 
-        {/* CÍRCULO VERDE SUAVE */}
         <View style={styles.circle}>
 
-          {/* ÍCONE */}
           <Image
             source={require('../../assets/corect icon.png')}
             style={styles.icon}
@@ -31,7 +28,6 @@ export default function Sucesso() {
 
         </View>
 
-        {/* TEXTOS */}
         <Text style={styles.title}>
           Cartão criado {'\n'}com sucesso!
         </Text>
@@ -42,10 +38,8 @@ export default function Sucesso() {
 
       </View>
 
-      {/* FOOTER */}
       <View style={styles.footer}>
 
-        {/* BOTÃO */}
         <TouchableOpacity
           style={styles.button}
           onPress={handleRestart}
@@ -55,7 +49,6 @@ export default function Sucesso() {
           </Text>
         </TouchableOpacity>
 
-        {/* LINK */}
         <TouchableOpacity onPress={handleRestart}>
           <Text style={styles.link}>
             Voltar ao início
@@ -93,7 +86,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
 
-    // AUMENTO DA DISTÂNCIA
     marginBottom: 60,
   },
 

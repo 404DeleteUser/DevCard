@@ -19,7 +19,7 @@ export default function Index() {
 
     topContent: {
       alignItems: 'center',
-      marginTop: height * 0.15, // ✔ agora funciona
+      marginTop: height * 0.15,
     },
 
     image: {
@@ -71,8 +71,6 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-      
-      {/* CONTEÚDO SUPERIOR */}
       <View style={styles.topContent}>
         <Image
           source={require('../../assets/BlueCreditCard-removebg-preview.png')}
@@ -87,7 +85,6 @@ export default function Index() {
         </Text>
       </View>
 
-      {/* CONTEÚDO INFERIOR */}
       <View style={styles.bottomContent}>
         <TouchableOpacity style={styles.button} onPress={handleNavigate}>
           <Text style={styles.buttonText}>Criar meu cartão</Text>
@@ -97,7 +94,6 @@ export default function Index() {
           Aplicação Móvel • Aula 7
         </Text>
       </View>
-
     </View>
   );
 }

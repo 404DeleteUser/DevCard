@@ -67,7 +67,6 @@ export default function Preview() {
         <View style={styles.flare1} />
         <View style={styles.flare2} />
 
-        {/* AVATAR */}
         <View style={styles.avatarShadow}>
           <View style={styles.avatar}>
             <Text
@@ -81,17 +80,14 @@ export default function Preview() {
           </View>
         </View>
 
-        {/* 👇 NOME (ISOLADO) */}
         <View style={styles.nameBox}>
           <Text style={styles.name}>{nome}</Text>
         </View>
 
-        {/* 👇 CARGO (ISOLADO) */}
         <View style={styles.cargoBox}>
           <Text style={styles.info}>{cargo}</Text>
         </View>
 
-        {/* 👇 EMPRESA (ISOLADO) */}
         {showEmpresa && (
           <View style={styles.empresaBox}>
             <Text style={styles.info}>{empresa}</Text>
@@ -100,12 +96,10 @@ export default function Preview() {
 
         {showEmpresa && <View style={styles.line} />}
 
-        {/* 👇 ESPECIALISTA EM (ISOLADO) */}
         <View style={styles.especialistaBox}>
           <Text style={styles.techLabel}>Especialista em</Text>
         </View>
 
-        {/* 👇 TECNOLOGIA (ISOLADO) */}
         <View style={styles.techBox}>
           <Text style={styles.tech}>
             {tecnologia}
@@ -223,7 +217,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  // 👇 NOVOS BLOCOS
   nameBox: {
     alignItems: 'center',
   },
@@ -270,7 +263,6 @@ const styles = StyleSheet.create({
     color: '#f0e9e2',
     marginTop: 4,
     fontWeight: 'bold',
-
   },
 
   line: {
@@ -311,7 +303,7 @@ const styles = StyleSheet.create({
   editButton: {
     borderWidth: 2,
     borderColor: '#0a40c0',
-    padding:15,
+    padding: 15,
     borderRadius: 12,
     alignItems: 'center',
   },

@@ -17,7 +17,6 @@ export default function Cadastro() {
   const [tecnologia, setTecnologia] = useState('');
   const [cor, setCor] = useState('');
 
-  // ERROS
   const [erroNome, setErroNome] = useState('');
   const [erroCargo, setErroCargo] = useState('');
   const [erroAnos, setErroAnos] = useState('');
@@ -30,26 +29,22 @@ export default function Cadastro() {
 
     let valido = true;
 
-    // RESET DOS ERROS
     setErroNome('');
     setErroCargo('');
     setErroAnos('');
     setErroTecnologia('');
     setErroCor('');
 
-    // NOME
     if (nome.trim().length < 3) {
       setErroNome('Digite pelo menos 3 caracteres');
       valido = false;
     }
 
-    // CARGO
     if (!cargo.trim()) {
       setErroCargo('Campo obrigatório');
       valido = false;
     }
 
-    // ANOS
     if (!anos.trim()) {
       setErroAnos('Campo obrigatório');
       valido = false;
@@ -61,19 +56,16 @@ export default function Cadastro() {
       valido = false;
     }
 
-    // TECNOLOGIA
     if (!tecnologia.trim()) {
       setErroTecnologia('Campo obrigatório');
       valido = false;
     }
 
-    // COR
     if (!cor) {
       setErroCor('Selecione uma cor');
       valido = false;
     }
 
-    // BLOQUEIA NAVEGAÇÃO
     if (!valido) return;
 
     router.push({
@@ -98,7 +90,6 @@ export default function Cadastro() {
   return (
     <View style={styles.container}>
 
-      {/* CONTEÚDO SUPERIOR */}
       <View>
         <Text style={styles.title}>Cadastro</Text>
 
@@ -106,7 +97,6 @@ export default function Cadastro() {
           Preencha seus dados de dev
         </Text>
 
-        {/* NOME */}
         <Text style={styles.label}>Nome Completo</Text>
         <TextInput
           style={styles.input}
@@ -118,7 +108,6 @@ export default function Cadastro() {
           <Text style={styles.errorText}>{erroNome}</Text>
         ) : null}
 
-        {/* CARGO */}
         <Text style={styles.label}>Cargo</Text>
         <TextInput
           style={styles.input}
@@ -130,7 +119,6 @@ export default function Cadastro() {
           <Text style={styles.errorText}>{erroCargo}</Text>
         ) : null}
 
-        {/* EMPRESA */}
         <Text style={styles.label}>Empresa (opcional)</Text>
         <TextInput
           style={styles.input}
@@ -138,7 +126,6 @@ export default function Cadastro() {
           onChangeText={setEmpresa}
         />
 
-        {/* ANOS */}
         <Text style={styles.label}>Anos de experiência</Text>
         <TextInput
           style={styles.input}
@@ -151,7 +138,6 @@ export default function Cadastro() {
           <Text style={styles.errorText}>{erroAnos}</Text>
         ) : null}
 
-        {/* TECNOLOGIA */}
         <Text style={styles.label}>Tecnologia favorita</Text>
         <TextInput
           style={styles.input}
@@ -212,7 +198,6 @@ export default function Cadastro() {
 
       </View>
 
-      {/* FOOTER / BOTÃO */}
       <View style={styles.bottomContent}>
         <TouchableOpacity
           style={[
