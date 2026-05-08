@@ -183,8 +183,8 @@ router.replace('/')
 ## ▶️ Como executar o projeto
 
 ```bash
-npm install
-npx expo start
+npm install expo --legacy-peer-deps
+npx expo start 
 ```
 
 ---
