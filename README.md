@@ -10,7 +10,6 @@ Aplicativo mobile desenvolvido com **React Native + Expo Router** para criação
 - Expo  
 - Expo Router  
 - TypeScript  
-- Flexbox  
 
 ---
 
